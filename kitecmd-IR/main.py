@@ -53,14 +53,14 @@ def main():
     check_for_self_update()
 
     print("Checking required packages...")
-    for pkg in ["kitecmd", "InstallerReady"]:
+    for pkg in ["InstallerReady"]:
         if is_installed(pkg):
             print(f"{pkg} is already installed.")
         else:
             print(f"Installing {pkg}...")
             install_package(pkg)
 
-    print("kitecmd-IR, kitecmd, and InstallerReady are installed and current!")
+    print("kitecmd-IR, and InstallerReady are installed and current!")
 
 if __name__ == "__main__":
     main()
